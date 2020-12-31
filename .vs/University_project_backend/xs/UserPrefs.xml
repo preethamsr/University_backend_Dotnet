@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{F147348D-5079-426A-951D-DCA3951360AF}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="University_project_backend/Views/Userverification/Userverification.aspx">
+    <Files>
+      <File FileName="University_project_backend/Controllers/HomeController.cs" Line="9" Column="1" />
+      <File FileName="University_project_backend/Models/Contextclass.cs" />
+      <File FileName="University_project_backend/Models/Loan.cs" />
+      <File FileName="University_project_backend/Controllers/LoanController.cs" Line="17" Column="32" />
+      <File FileName="University_project_backend/Controllers/moneytransactionController.cs" Line="17" Column="10" />
+      <File FileName="University_project_backend/Controllers/Admin.cs" Line="252" Column="1" />
+      <File FileName="University_project_backend/Controllers/Userverification.cs" Line="17" Column="18" />
+      <File FileName="University_project_backend/Views/Userverification/Userverification.aspx" Line="9" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="University_project_backend" expanded="True">
+            <Node name="University_project_backend" expanded="True">
+              <Node name="App_Start" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Userverification" expanded="True">
+                  <Node name="Userverification.aspx" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Global.asax" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/preethamhd/Projects/University_project_backend/University_project_backend/Models/Contextclass.cs" relfile="University_project_backend/Models/Contextclass.cs" line="6" column="1" />
+      <Breakpoint file="/Users/preethamhd/Projects/University_project_backend/University_project_backend/Controllers/Homepage.cs" relfile="University_project_backend/Controllers/Homepage.cs" line="16" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Default" Name="Default">
+      <Items>
+        <StartupItem ItemId="{F147348D-5079-426A-951D-DCA3951360AF}" ItemName="University_project_backend" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.University__project__backend PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

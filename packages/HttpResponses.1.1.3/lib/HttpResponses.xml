@@ -1,0 +1,2353 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HttpResponses</name>
+    </assembly>
+    <members>
+        <member name="T:HttpResponsesLibrary.HttpResponses">
+            <summary>
+            Less boilerplate on throwing HttpResponseExceptions.
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Ambiguous">
+            <summary>
+            HTTP status 300
+            (the requested information has multiple representations)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Ambiguous(System.String)">
+            <summary>
+            HTTP status 300
+            (the requested information has multiple representations)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Ambiguous(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 300
+            (the requested information has multiple representations)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Ambiguous``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 300
+            (the requested information has multiple representations)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Ambiguous``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 300
+            (the requested information has multiple representations)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Moved">
+            <summary>
+            HTTP status 301
+            (the requested information has been moved to the URI specified in the Location header)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Moved(System.String)">
+            <summary>
+            HTTP status 301
+            (the requested information has been moved to the URI specified in the Location header)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Moved(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 301
+            (the requested information has been moved to the URI specified in the Location header)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Moved``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 301
+            (the requested information has been moved to the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Moved``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 301
+            (the requested information has been moved to the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Found">
+            <summary>
+            HTTP status 302
+            (the requested information is located at the URI specified in the Location header)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Found(System.String)">
+            <summary>
+            HTTP status 302
+            (the requested information is located at the URI specified in the Location header)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Found(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 302
+            (the requested information is located at the URI specified in the Location header)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Found``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 302
+            (the requested information is located at the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Found``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 302
+            (the requested information is located at the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RedirectKeepVerb">
+            <summary>
+            HTTP status 307
+            (the request information is located at the URI specified in the Location header)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RedirectKeepVerb(System.String)">
+            <summary>
+            HTTP status 307
+            (the request information is located at the URI specified in the Location header)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RedirectKeepVerb(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 307
+            (the request information is located at the URI specified in the Location header)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RedirectKeepVerb``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 307
+            (the request information is located at the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RedirectKeepVerb``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 307
+            (the request information is located at the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotImplemented">
+            <summary>
+            HTTP status 501
+            (the server does not support the requested function)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotImplemented(System.String)">
+            <summary>
+            HTTP status 501
+            (the server does not support the requested function)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotImplemented(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 501
+            (the server does not support the requested function)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotImplemented``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 501
+            (the server does not support the requested function)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotImplemented``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 501
+            (the server does not support the requested function)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.BadGateway">
+            <summary>
+            HTTP status 502
+            (an intermediate proxy server received a bad response from another proxy or the origin server)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.BadGateway(System.String)">
+            <summary>
+            HTTP status 502
+            (an intermediate proxy server received a bad response from another proxy or the origin server)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.BadGateway(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 502
+            (an intermediate proxy server received a bad response from another proxy or the origin server)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.BadGateway``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 502
+            (an intermediate proxy server received a bad response from another proxy or the origin server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.BadGateway``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 502
+            (an intermediate proxy server received a bad response from another proxy or the origin server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.GatewayTimeout">
+            <summary>
+            HTTP status 504
+            (an intermediate proxy server timed out while waiting for a response from another proxy or the origin server)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.GatewayTimeout(System.String)">
+            <summary>
+            HTTP status 504
+            (an intermediate proxy server timed out while waiting for a response from another proxy or the origin server)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.GatewayTimeout(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 504
+            (an intermediate proxy server timed out while waiting for a response from another proxy or the origin server)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.GatewayTimeout``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 504
+            (an intermediate proxy server timed out while waiting for a response from another proxy or the origin server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.GatewayTimeout``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 504
+            (an intermediate proxy server timed out while waiting for a response from another proxy or the origin server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ExpectationFailed">
+            <summary>
+            HTTP status 417
+            (an expectation given in an Expect header could not be met by the server)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ExpectationFailed(System.String)">
+            <summary>
+            HTTP status 417
+            (an expectation given in an Expect header could not be met by the server)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ExpectationFailed(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 417
+            (an expectation given in an Expect header could not be met by the server)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ExpectationFailed``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 417
+            (an expectation given in an Expect header could not be met by the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ExpectationFailed``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 417
+            (an expectation given in an Expect header could not be met by the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.InternalServerError">
+            <summary>
+            HTTP status 500
+            (a generic error has occurred on the server)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.InternalServerError(System.String)">
+            <summary>
+            HTTP status 500
+            (a generic error has occurred on the server)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.InternalServerError(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 500
+            (a generic error has occurred on the server)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.InternalServerError``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 500
+            (a generic error has occurred on the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.InternalServerError``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 500
+            (a generic error has occurred on the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.HttpVersionNotSupported">
+            <summary>
+            HTTP status 505
+            (the requested HTTP version is not supported by the server)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.HttpVersionNotSupported(System.String)">
+            <summary>
+            HTTP status 505
+            (the requested HTTP version is not supported by the server)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.HttpVersionNotSupported(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 505
+            (the requested HTTP version is not supported by the server)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.HttpVersionNotSupported``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 505
+            (the requested HTTP version is not supported by the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.HttpVersionNotSupported``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 505
+            (the requested HTTP version is not supported by the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PreconditionFailed">
+            <summary>
+            HTTP status 412
+            (a condition set for this request failed, and the request cannot be carried out)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PreconditionFailed(System.String)">
+            <summary>
+            HTTP status 412
+            (a condition set for this request failed, and the request cannot be carried out)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PreconditionFailed(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 412
+            (a condition set for this request failed, and the request cannot be carried out)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PreconditionFailed``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 412
+            (a condition set for this request failed, and the request cannot be carried out)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PreconditionFailed``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 412
+            (a condition set for this request failed, and the request cannot be carried out)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestUriTooLong">
+            <summary>
+            HTTP status 414
+            (the URI is too long)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestUriTooLong(System.String)">
+            <summary>
+            HTTP status 414
+            (the URI is too long)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestUriTooLong(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 414
+            (the URI is too long)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestUriTooLong``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 414
+            (the URI is too long)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestUriTooLong``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 414
+            (the URI is too long)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestEntityTooLarge">
+            <summary>
+            HTTP status 413
+            (the request is too large for the server to process)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestEntityTooLarge(System.String)">
+            <summary>
+            HTTP status 413
+            (the request is too large for the server to process)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestEntityTooLarge(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 413
+            (the request is too large for the server to process)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestEntityTooLarge``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 413
+            (the request is too large for the server to process)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestEntityTooLarge``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 413
+            (the request is too large for the server to process)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ServiceUnavailable">
+            <summary>
+            HTTP status 503
+            (the server is temporarily unavailable, usually due to high load or maintenance)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ServiceUnavailable(System.String)">
+            <summary>
+            HTTP status 503
+            (the server is temporarily unavailable, usually due to high load or maintenance)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ServiceUnavailable(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 503
+            (the server is temporarily unavailable, usually due to high load or maintenance)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ServiceUnavailable``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 503
+            (the server is temporarily unavailable, usually due to high load or maintenance)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ServiceUnavailable``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 503
+            (the server is temporarily unavailable, usually due to high load or maintenance)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.UnsupportedMediaType">
+            <summary>
+            HTTP status 415
+            (the request is an unsupported type)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.UnsupportedMediaType(System.String)">
+            <summary>
+            HTTP status 415
+            (the request is an unsupported type)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.UnsupportedMediaType(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 415
+            (the request is an unsupported type)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.UnsupportedMediaType``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 415
+            (the request is an unsupported type)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.UnsupportedMediaType``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 415
+            (the request is an unsupported type)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotAcceptable">
+            <summary>
+            HTTP status 406
+            (the client has indicated with Accept headers that it will not accept any of the available representations of the resource)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotAcceptable(System.String)">
+            <summary>
+            HTTP status 406
+            (the client has indicated with Accept headers that it will not accept any of the available representations of the resource)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotAcceptable(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 406
+            (the client has indicated with Accept headers that it will not accept any of the available representations of the resource)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotAcceptable``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 406
+            (the client has indicated with Accept headers that it will not accept any of the available representations of the resource)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotAcceptable``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 406
+            (the client has indicated with Accept headers that it will not accept any of the available representations of the resource)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestTimeout">
+            <summary>
+            HTTP status 408
+            (the client did not send a request within the time the server was expecting the request)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestTimeout(System.String)">
+            <summary>
+            HTTP status 408
+            (the client did not send a request within the time the server was expecting the request)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestTimeout(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 408
+            (the client did not send a request within the time the server was expecting the request)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestTimeout``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 408
+            (the client did not send a request within the time the server was expecting the request)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestTimeout``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 408
+            (the client did not send a request within the time the server was expecting the request)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Conflict">
+            <summary>
+            HTTP status 409
+            (the request could not be carried out because of a conflict on the server)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Conflict(System.String)">
+            <summary>
+            HTTP status 409
+            (the request could not be carried out because of a conflict on the server)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Conflict(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 409
+            (the request could not be carried out because of a conflict on the server)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Conflict``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 409
+            (the request could not be carried out because of a conflict on the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Conflict``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 409
+            (the request could not be carried out because of a conflict on the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ProxyAuthenticationRequired">
+            <summary>
+            HTTP status 407
+            (the requested proxy requires authentication)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ProxyAuthenticationRequired(System.String)">
+            <summary>
+            HTTP status 407
+            (the requested proxy requires authentication)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ProxyAuthenticationRequired(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 407
+            (the requested proxy requires authentication)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ProxyAuthenticationRequired``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 407
+            (the requested proxy requires authentication)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ProxyAuthenticationRequired``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 407
+            (the requested proxy requires authentication)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Gone">
+            <summary>
+            HTTP status 410
+            (the requested resource is no longer available)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Gone(System.String)">
+            <summary>
+            HTTP status 410
+            (the requested resource is no longer available)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Gone(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 410
+            (the requested resource is no longer available)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Gone``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 410
+            (the requested resource is no longer available)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Gone``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 410
+            (the requested resource is no longer available)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.LengthRequired">
+            <summary>
+            HTTP status 411
+            (the required Content-length header is missing)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.LengthRequired(System.String)">
+            <summary>
+            HTTP status 411
+            (the required Content-length header is missing)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.LengthRequired(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 411
+            (the required Content-length header is missing)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.LengthRequired``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 411
+            (the required Content-length header is missing)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.LengthRequired``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 411
+            (the required Content-length header is missing)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.BadRequest">
+            <summary>
+            HTTP status 400
+            (the request could not be understood by the server)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.BadRequest(System.String)">
+            <summary>
+            HTTP status 400
+            (the request could not be understood by the server)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.BadRequest(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 400
+            (the request could not be understood by the server)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.BadRequest``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 400
+            (the request could not be understood by the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.BadRequest``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 400
+            (the request could not be understood by the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Unauthorized">
+            <summary>
+            HTTP status 401
+            (the requested resource requires authentication)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Unauthorized(System.String)">
+            <summary>
+            HTTP status 401
+            (the requested resource requires authentication)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Unauthorized(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 401
+            (the requested resource requires authentication)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Unauthorized``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 401
+            (the requested resource requires authentication)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Unauthorized``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 401
+            (the requested resource requires authentication)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PaymentRequired">
+            <summary>
+            HTTP status 402
+            (reserved for future use)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PaymentRequired(System.String)">
+            <summary>
+            HTTP status 402
+            (reserved for future use)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PaymentRequired(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 402
+            (reserved for future use)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PaymentRequired``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 402
+            (reserved for future use)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PaymentRequired``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 402
+            (reserved for future use)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Unused">
+            <summary>
+            HTTP status 306
+            (a proposed extension to the HTTP/1.1 specification that is not fully specified)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Unused(System.String)">
+            <summary>
+            HTTP status 306
+            (a proposed extension to the HTTP/1.1 specification that is not fully specified)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Unused(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 306
+            (a proposed extension to the HTTP/1.1 specification that is not fully specified)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Unused``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 306
+            (a proposed extension to the HTTP/1.1 specification that is not fully specified)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Unused``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 306
+            (a proposed extension to the HTTP/1.1 specification that is not fully specified)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.TemporaryRedirect">
+            <summary>
+            HTTP status 307
+            (the request information is located at the URI specified in the Location header)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.TemporaryRedirect(System.String)">
+            <summary>
+            HTTP status 307
+            (the request information is located at the URI specified in the Location header)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.TemporaryRedirect(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 307
+            (the request information is located at the URI specified in the Location header)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.TemporaryRedirect``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 307
+            (the request information is located at the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.TemporaryRedirect``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 307
+            (the request information is located at the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Forbidden">
+            <summary>
+            HTTP status 403
+            (the server refuses to fulfill the request)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Forbidden(System.String)">
+            <summary>
+            HTTP status 403
+            (the server refuses to fulfill the request)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Forbidden(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 403
+            (the server refuses to fulfill the request)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Forbidden``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 403
+            (the server refuses to fulfill the request)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Forbidden``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 403
+            (the server refuses to fulfill the request)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotFound">
+            <summary>
+            HTTP status 404
+            (the requested resource does not exist on the server)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotFound(System.String)">
+            <summary>
+            HTTP status 404
+            (the requested resource does not exist on the server)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotFound(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 404
+            (the requested resource does not exist on the server)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotFound``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 404
+            (the requested resource does not exist on the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotFound``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 404
+            (the requested resource does not exist on the server)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Accepted">
+            <summary>
+            HTTP status 202
+            (the request has been accepted for further processing)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Accepted(System.String)">
+            <summary>
+            HTTP status 202
+            (the request has been accepted for further processing)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Accepted(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 202
+            (the request has been accepted for further processing)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Accepted``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 202
+            (the request has been accepted for further processing)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Accepted``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 202
+            (the request has been accepted for further processing)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NonAuthoritativeInformation">
+            <summary>
+            HTTP status 203
+            (the returned metainformation is from a cached copy instead of the origin server and therefore may be incorrect)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NonAuthoritativeInformation(System.String)">
+            <summary>
+            HTTP status 203
+            (the returned metainformation is from a cached copy instead of the origin server and therefore may be incorrect)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NonAuthoritativeInformation(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 203
+            (the returned metainformation is from a cached copy instead of the origin server and therefore may be incorrect)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NonAuthoritativeInformation``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 203
+            (the returned metainformation is from a cached copy instead of the origin server and therefore may be incorrect)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NonAuthoritativeInformation``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 203
+            (the returned metainformation is from a cached copy instead of the origin server and therefore may be incorrect)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NoContent">
+            <summary>
+            HTTP status 204
+            (the request has been successfully processed and that the response is intentionally blank)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NoContent(System.String)">
+            <summary>
+            HTTP status 204
+            (the request has been successfully processed and that the response is intentionally blank)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NoContent(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 204
+            (the request has been successfully processed and that the response is intentionally blank)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NoContent``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 204
+            (the request has been successfully processed and that the response is intentionally blank)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NoContent``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 204
+            (the request has been successfully processed and that the response is intentionally blank)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ResetContent">
+            <summary>
+            HTTP status 205
+            (the client should reset (not reload) the current resource)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ResetContent(System.String)">
+            <summary>
+            HTTP status 205
+            (the client should reset (not reload) the current resource)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ResetContent(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 205
+            (the client should reset (not reload) the current resource)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ResetContent``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 205
+            (the client should reset (not reload) the current resource)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.ResetContent``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 205
+            (the client should reset (not reload) the current resource)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PartialContent">
+            <summary>
+            HTTP status 206
+            (the response is a partial response as requested by a GET request that includes a byte range)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PartialContent(System.String)">
+            <summary>
+            HTTP status 206
+            (the response is a partial response as requested by a GET request that includes a byte range)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PartialContent(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 206
+            (the response is a partial response as requested by a GET request that includes a byte range)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PartialContent``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 206
+            (the response is a partial response as requested by a GET request that includes a byte range)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.PartialContent``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 206
+            (the response is a partial response as requested by a GET request that includes a byte range)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MultipleChoices">
+            <summary>
+            HTTP status 300
+            (the requested information has multiple representations)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MultipleChoices(System.String)">
+            <summary>
+            HTTP status 300
+            (the requested information has multiple representations)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MultipleChoices(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 300
+            (the requested information has multiple representations)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MultipleChoices``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 300
+            (the requested information has multiple representations)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MultipleChoices``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 300
+            (the requested information has multiple representations)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MovedPermanently">
+            <summary>
+            HTTP status 301
+            (the requested information has been moved to the URI specified in the Location header)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MovedPermanently(System.String)">
+            <summary>
+            HTTP status 301
+            (the requested information has been moved to the URI specified in the Location header)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MovedPermanently(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 301
+            (the requested information has been moved to the URI specified in the Location header)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MovedPermanently``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 301
+            (the requested information has been moved to the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MovedPermanently``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 301
+            (the requested information has been moved to the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Redirect">
+            <summary>
+            HTTP status 302
+            (the requested information is located at the URI specified in the Location header)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Redirect(System.String)">
+            <summary>
+            HTTP status 302
+            (the requested information is located at the URI specified in the Location header)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Redirect(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 302
+            (the requested information is located at the URI specified in the Location header)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Redirect``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 302
+            (the requested information is located at the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Redirect``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 302
+            (the requested information is located at the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.SeeOther">
+            <summary>
+            HTTP status 303
+            (automatically redirects the client to the URI specified in the Location header as the result of a POST)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.SeeOther(System.String)">
+            <summary>
+            HTTP status 303
+            (automatically redirects the client to the URI specified in the Location header as the result of a POST)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.SeeOther(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 303
+            (automatically redirects the client to the URI specified in the Location header as the result of a POST)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.SeeOther``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 303
+            (automatically redirects the client to the URI specified in the Location header as the result of a POST)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.SeeOther``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 303
+            (automatically redirects the client to the URI specified in the Location header as the result of a POST)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotModified">
+            <summary>
+            HTTP status 304
+            (the client's cached copy is up to date)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotModified(System.String)">
+            <summary>
+            HTTP status 304
+            (the client's cached copy is up to date)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotModified(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 304
+            (the client's cached copy is up to date)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotModified``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 304
+            (the client's cached copy is up to date)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.NotModified``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 304
+            (the client's cached copy is up to date)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.UseProxy">
+            <summary>
+            HTTP status 305
+            (the request should use the proxy server at the URI specified in the Location header)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.UseProxy(System.String)">
+            <summary>
+            HTTP status 305
+            (the request should use the proxy server at the URI specified in the Location header)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.UseProxy(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 305
+            (the request should use the proxy server at the URI specified in the Location header)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.UseProxy``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 305
+            (the request should use the proxy server at the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.UseProxy``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 305
+            (the request should use the proxy server at the URI specified in the Location header)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MethodNotAllowed">
+            <summary>
+            HTTP status 405
+            (the request method is not allowed on the requested resource)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MethodNotAllowed(System.String)">
+            <summary>
+            HTTP status 405
+            (the request method is not allowed on the requested resource)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MethodNotAllowed(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 405
+            (the request method is not allowed on the requested resource)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MethodNotAllowed``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 405
+            (the request method is not allowed on the requested resource)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.MethodNotAllowed``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 405
+            (the request method is not allowed on the requested resource)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestedRangeNotSatisfiable">
+            <summary>
+            HTTP status 416
+            (the range of data requested from the resource cannot be returned, either because the beginning of the range is before the beginning of the resource, or the end of the range is after the end of the resource)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestedRangeNotSatisfiable(System.String)">
+            <summary>
+            HTTP status 416
+            (the range of data requested from the resource cannot be returned, either because the beginning of the range is before the beginning of the resource, or the end of the range is after the end of the resource)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestedRangeNotSatisfiable(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 416
+            (the range of data requested from the resource cannot be returned, either because the beginning of the range is before the beginning of the resource, or the end of the range is after the end of the resource)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestedRangeNotSatisfiable``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 416
+            (the range of data requested from the resource cannot be returned, either because the beginning of the range is before the beginning of the resource, or the end of the range is after the end of the resource)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.RequestedRangeNotSatisfiable``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 416
+            (the range of data requested from the resource cannot be returned, either because the beginning of the range is before the beginning of the resource, or the end of the range is after the end of the resource)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Created">
+            <summary>
+            HTTP status 201
+            (the request resulted in a new resource created before the response was sent)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Created(System.String)">
+            <summary>
+            HTTP status 201
+            (the request resulted in a new resource created before the response was sent)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Created(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 201
+            (the request resulted in a new resource created before the response was sent)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Created``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 201
+            (the request resulted in a new resource created before the response was sent)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Created``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 201
+            (the request resulted in a new resource created before the response was sent)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.OK">
+            <summary>
+            HTTP status 200
+            (the request succeeded and the requested information is in the response)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.OK(System.String)">
+            <summary>
+            HTTP status 200
+            (the request succeeded and the requested information is in the response)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.OK(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 200
+            (the request succeeded and the requested information is in the response)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.OK``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 200
+            (the request succeeded and the requested information is in the response)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.OK``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 200
+            (the request succeeded and the requested information is in the response)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.SwitchingProtocols">
+            <summary>
+            HTTP status 101
+            (the protocol version or protocol is being changed)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.SwitchingProtocols(System.String)">
+            <summary>
+            HTTP status 101
+            (the protocol version or protocol is being changed)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.SwitchingProtocols(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 101
+            (the protocol version or protocol is being changed)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.SwitchingProtocols``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 101
+            (the protocol version or protocol is being changed)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.SwitchingProtocols``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 101
+            (the protocol version or protocol is being changed)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Continue">
+            <summary>
+            HTTP status 100
+            (the client can continue with its request)
+            </summary>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Continue(System.String)">
+            <summary>
+            HTTP status 100
+            (the client can continue with its request)
+            </summary>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Continue(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            HTTP status 100
+            (the client can continue with its request)
+            </summary>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Continue``1(System.Net.Http.HttpRequestMessage,``0)">
+            <summary>
+            HTTP status 100
+            (the client can continue with its request)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+        <member name="M:HttpResponsesLibrary.HttpResponses.Continue``1(System.Net.Http.HttpRequestMessage,System.String,``0)">
+            <summary>
+            HTTP status 100
+            (the client can continue with its request)
+            </summary>
+            <typeparam name="T">The content of the HTTP response message</typeparam>
+            <param name="request">The HTTP request message which led to this response message</param>
+            <param name="reasonPhrase">
+            The reason phrase which typically is sent by servers together with the status code
+            </param>
+            <param name="content">The content of the HTTP response message</param>
+            <returns>
+            An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
+            </returns>
+        </member>
+    </members>
+</doc>
