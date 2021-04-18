@@ -13,8 +13,9 @@ namespace University_project_backend.Controllers
            using(Contextclass contextclass=new Contextclass())
             {
                  var activationcode_user = contextclass.user_Details.Where(x => x.Activationcode == activationcode).FirstOrDefault();
-                 activationcode_user.Verified = "yes";
+                 activationcode_user.Verified = "YES";
                  contextclass.SaveChanges();
+
                 return View();
             }
             

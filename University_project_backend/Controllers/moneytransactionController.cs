@@ -10,12 +10,15 @@
     using System.Net.Http;
     using System.Net;
     using System.Net.Mail;
+    using System.Web.Http.Cors;
 
-    namespace University_project_backend.Controllers
+namespace University_project_backend.Controllers
     {
+    [DisableCors]
         public class transactionController : ApiController
         {
         Contextclass contextclass = new Contextclass();
+        [System.Web.Http.Authorize]
 
             [System.Web.Http.HttpPost]
             public HttpResponseMessage moneytransaction([FromBody] moneytransfer moneytransfers,string data)
@@ -80,6 +83,8 @@
 
             }
             }
+
+        
         [System.Web.Http.HttpGet]
         public HttpResponseMessage Account_number_search(string account_number)
         {
@@ -111,7 +116,7 @@
         {
             var link = "Localhost/4200";
             // var link = Request.RequestUri.AbsoluteUri.Replace(Request.RequestUri.PathAndQuery, GenarateUserVerificationLink);
-            var fromMail = new MailAddress("projectu889@gmail.com", "Preetham"); // set your email  
+            var fromMail = new MailAddress("laleshraj716@gmail.com","ranjitha716"); // set your email  
             var fromEmailpassword = "ranjitha716"; // Set your password
             var toEmail = new MailAddress(email_address_to_sender);
 
@@ -142,7 +147,7 @@
             {
                 var link = "Localhost/4200";
                // var link = Request.RequestUri.AbsoluteUri.Replace(Request.RequestUri.PathAndQuery, GenarateUserVerificationLink);
-                var fromMail = new MailAddress("projectu889@gmail.com", "Preetham"); // set your email  
+                var fromMail = new MailAddress("laleshraj716@gmail.com","ranjitha716"); // set your email  
                 var fromEmailpassword = "ranjitha716"; // Set your password
                 var toEmail = new MailAddress(email_address);
 
@@ -168,6 +173,7 @@
             }
 
               [System.Web.Http.HttpGet]
+              [System.Web.Http.Authorize]
               public HttpResponseMessage transactiondetails(string activationcode)
                {
             try { 

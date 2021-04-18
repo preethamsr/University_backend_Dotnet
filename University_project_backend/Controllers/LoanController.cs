@@ -11,12 +11,15 @@ using System.Net.Http;
 using System.Net;
 using System.Net.Mail;
 using System.IO;
+using System.Web.Http.Cors;
 
 namespace University_project_backend.Controllers
 {
+    [DisableCors]
     public class LoanController : ApiController
     {
         [System.Web.Http.HttpPost]
+        [System.Web.Http.Authorize]
       public HttpResponseMessage Loansubmit([FromBody] Loan ln, string activationcode)
         {
             try
@@ -123,6 +126,7 @@ namespace University_project_backend.Controllers
 
 
         }
+        [System.Web.Http.Authorize]
 
         [System.Web.Http.HttpGet]
         public HttpResponseMessage loan_detail(string activationcode)

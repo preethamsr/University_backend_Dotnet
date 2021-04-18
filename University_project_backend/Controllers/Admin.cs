@@ -10,13 +10,17 @@ using University_project_backend.Models;
 using System.Net.Http;
 using System.Net;
 using System.Net.Mail;
+using System.Web.Http.Cors;
 
 namespace University_project_backend.Controllers
 {
+    [DisableCors]
     public class AdminController : ApiController
         
     {
         [System.Web.Http.HttpGet]
+        [System.Web.Http.Authorize(Roles = "admin")]
+
         public HttpResponseMessage Account_list()
         {
             try

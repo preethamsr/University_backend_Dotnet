@@ -1,10 +1,9 @@
 ﻿using Microsoft.Owin;
 using Owin;
 using System;
-using System.Threading.Tasks;
-using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 [assembly: OwinStartup(typeof(University_project_backend.Startup1))]
 
@@ -15,18 +14,23 @@ namespace University_project_backend
         public void Configuration(IAppBuilder app)
         {
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=316888
+            HttpConfiguration config = new HttpConfiguration();
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
+            EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
             var provider = new Myauthenticationserverprovider();
-            OAuthAuthorizationServerOptions options = new OAuthAuthorizationServerOptions
+            OAuthAuthorizationServerOptions OAuthOptions = new OAuthAuthorizationServerOptions
             {
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/token"),
-                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(15),
-                Provider=provider
+                AccessTokenExpireTimeSpan = TimeSpan.FromSeconds(30),
+                Provider = provider,
+                RefreshTokenProvider = new OAuthCustomRefreshTokenProvider()
+
             };
-            app.UseOAuthAuthorizationServer(options);
+            app.UseOAuthAuthorizationServer(OAuthOptions);
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
-            HttpConfiguration config = new HttpConfiguration();
+            
+            config.EnableCors(cors);
             WebApiConfig.Register(config);
         }
     }
