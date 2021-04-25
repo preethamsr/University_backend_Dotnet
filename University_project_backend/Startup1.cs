@@ -20,7 +20,7 @@ namespace University_project_backend
             var provider = new Myauthenticationserverprovider();
             OAuthAuthorizationServerOptions OAuthOptions = new OAuthAuthorizationServerOptions
             {
-                AllowInsecureHttp = true,
+                AllowInsecureHttp = false,
                 TokenEndpointPath = new PathString("/token"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromSeconds(30),
                 Provider = provider,
